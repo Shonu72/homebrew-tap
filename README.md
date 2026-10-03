@@ -1,18 +1,13 @@
-# Shonu72 Tap
+# Condense Homebrew tap
 
-## How do I install these formulae?
+Install Condense on macOS 15 or newer:
 
-`brew install shonu72/tap/<formula>`
-
-Or `brew tap shonu72/tap` and then `brew install <formula>`.
-
-Or, in a `brew bundle` `Brewfile`:
-
-```ruby
-tap "shonu72/tap"
-brew "<formula>"
+```sh
+brew install --cask Shonu72/tap/condense
 ```
 
-## Documentation
+The app is distributed from [ElvynForge's release server](https://releases.elvynforge.xyz/Condense-v1.1-macos-universal.dmg). On first launch, macOS may ask you to approve Condense in **System Settings > Privacy & Security**. After approval, later launches work normally.
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+Update with `brew upgrade --cask Shonu72/tap/condense` and remove with `brew uninstall --cask Shonu72/tap/condense`.
+
+The cask source is in [`Casks/condense.rb`](Casks/condense.rb). For a new version, publish a new versioned DMG, calculate its SHA-256, then update `version` and `sha256` in the cask.
